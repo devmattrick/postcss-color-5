@@ -1,0 +1,54 @@
+{
+  "name": "postcss-color-5",
+  "version": "0.0.0",
+  "description": "PostCSS plugin to add support for CSS Color Module Level 5 (color-mix, color-contrast, color-adjust).",
+  "keywords": [
+    "postcss",
+    "css",
+    "postcss-plugin",
+    "color-mix",
+    "color-contrast",
+    "color-adjust",
+    "color",
+    "module",
+    "5"
+  ],
+  "scripts": {
+    "test": "jest",
+    "lint": "eslint src/"
+  },
+  "author": "Matt McCune <matt@mattrick.org>",
+  "license": "MIT",
+  "repository": "devmattrick/postcss-color-5",
+  "engines": {
+    "node": ">=10.0.0"
+  },
+  "dependencies": {
+    "@types/chroma-js": "^2.1.3",
+    "chroma-js": "^2.1.0"
+  },
+  "peerDependencies": {
+    "postcss": "^8.1.5"
+  },
+  "devDependencies": {
+    "@types/jest": "^26.0.20",
+    "@typescript-eslint/eslint-plugin": "^4.15.0",
+    "@typescript-eslint/parser": "^4.15.0",
+    "eslint": "^7.14.0",
+    "eslint-plugin-jest": "^24.1.3",
+    "husky": "^4.3.0",
+    "jest": "^26.4.2",
+    "lint-staged": "^10.4.0",
+    "postcss": "^8.1.5",
+    "ts-jest": "^26.5.0",
+    "typescript": "^4.1.3"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.js": "eslint --fix"
+  }
+}
